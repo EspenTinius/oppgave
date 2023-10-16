@@ -1,0 +1,66 @@
+<body style="background-color: lightblue;">
+    <nav>
+        <a href="oppgave2.html">hjemme siden vår</a>
+        <a href="rom.html">bestilling av rom</a>
+        <a href="resturang.html">vår resturang</a>
+        <a href="#">kontakt</a>
+    </nav>
+    <h1>her kan du bestille rom</h1>
+    <form action="">rom type
+        <label for="">
+            <select name="reisemål" id="">
+               <option value="roma">suite</option>
+               <option value="paris">dobbel rom</option>
+               <option value="london">enkel rom</option>
+            </select>
+               <br>
+               <label for="">amkomst dato</label>
+               <input type="date" name="" id="">
+               <br>
+               <label for="">reisedato</label>
+               <input type="date" name="" id="">
+        </label>
+        <section class="gex">
+            <div class=""><img src="last ned (3).jpg" alt="">suite</div>
+            <div class=""><img src="last ned (4).jpg" alt="">dobbelrom</div>
+            <div class=""><img src="last ned (5).jpg" alt="">enkelrom</div>
+        </section>
+    </form>
+    <p style="text-align: center;">hvis du skal cancelere må det gjøres 4 virkedager før</p>
+</body>
+
+<style>
+    div{
+        border: 2px solid black;
+        background-color: rgb(215, 215, 215);
+    }
+    img{
+        height: 300px;
+    }
+    .gex{
+        display: flex;
+        grid-template-rows:  300px;
+        grid-auto-columns: auto;
+    }
+    form{
+        width: 500px;
+        height: max-content;
+    }
+    h1{
+        text-align: center;
+    }
+
+  nav{
+    display: flex;
+    flex-direction: row;}
+    
+    nav a{
+     font-size: large;
+     flex: 1;
+     text-decoration: none;
+     padding: 1rem;
+     background-color: rgb(6, 55, 159);
+     color:white;
+     border: 1px solid white;}
+    
+</style>

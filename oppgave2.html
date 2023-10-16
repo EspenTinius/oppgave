@@ -1,0 +1,74 @@
+<html lang="no">
+    <head>
+        <title>verdens beste hotell</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav>
+            <a href="oppgave2.html">hjemme siden vår</a>
+            <a href="rom.html">bestilling av rom</a>
+            <a href="resturang.html">vår resturang</a>
+            <a href="#">kontakt</a>
+        </nav>
+        <img class="surfimg" src="surfing-vintage-retro-backdrop-1592981605aHB.jpg" alt=""><h1>velkommen til vårt fine hotell</h1>
+        <h2>du er hjertelig velkomen til vårt hotel</h2>
+        <p>
+            vi har en hotell resutrang som serverer bufe om morningen til alle på hottelet <br>
+            vi har også basseng og tilbyr et utvalg av rom
+            
+        </p>
+        <section class="bilderhotell">
+            <div class="seks-koloner to-rader"><img src="las-vegas-hotel.jpg" alt="" style="height: 400px;"></div>
+            <div class="tre-koloner"><img src="last ned (3).jpg" alt="" style="height: 200px;"></div>
+            <div class="tre-koloner"><img src="last ned (4).jpg" alt="" style="height: 200px; padding-left: 100px;"></div>
+            <div class="tre-koloner"><img src="last ned (6).jpg" alt="" style="height: 170px;"></div>
+        </section>
+    </body>
+    <style>
+        p{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        h1{
+            color: gold;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        nav a{
+            font-size: large;
+            flex: 1;
+            text-decoration: none;
+            padding: 1rem;
+            background-color: rgb(6, 55, 159);
+            color:white;
+            border: 1px solid white;
+        }
+        section{
+            display: grid;
+            
+        }
+        .surfimg{
+            width: 100px;
+        }
+        .bilderhotell{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            max-width: 80rem;
+            grid-auto-rows: minmax(12rem auto);
+            gap: 1rem;
+        }
+        .tre-koloner{ 
+            grid-column: span 3;
+        }
+        .fire-koloner{ grid-column: span 4;}
+        .seks-koloner{ grid-column: span 6;}
+        .to-rader{ grid-row: span 2;}
+
+
+    </style>
+</html>
